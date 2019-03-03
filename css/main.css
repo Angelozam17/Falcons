@@ -1,38 +1,20 @@
 @import url("../fonts/Poppins.css");
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 300;
-  font-size: 1rem;
-  color: #5a6169;
+  font-family: 'Poppins', sans-serif;
 }
 body .bienvenida {
-  position: relative;
   min-height: 700px;
   background: url("../images/carousel-3.jpg") no-repeat center fixed;
   background-size: cover;
+  position: relative;
 }
 body .bienvenida::before {
   position: absolute;
   content: "";
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: #212529;
-  z-index: 0;
-}
-body .bienvenida .navbar {
-  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  padding: 0.75rem 1.5rem;
-}
-body .bienvenida .navbar .navbar-brand {
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-body .bienvenida .navbar .navbar-toggler {
-  padding: 0.5rem 0.5rem;
-  font-size: 1rem;
 }

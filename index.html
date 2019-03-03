@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" 
-          content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" 
+		  content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" 
 		  content="ie=edge" />
-	<link rel="icon" href="images/futbol-solid.png" type="image/x-icon">
+	<link rel="icon" href="images/futbol-solid.svg" type="image/x-icon">
 
-    <!--CSS Dependencies-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
+	<!--CSS Dependencies-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
 
-    <title>Falcons</title>
+	<title>Falcons</title>
 </head>
 <body>
-    
-    <!--Sección de Bienvenida-->
-    <div class="bienvenida d-flex justify-content-center">
-        <div class="container">
-            <!--Barra de navegación-->
-            <nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
-                <a class="navbar-brand mr-5" href="#">
-					<img class="mr-2"
-						 src="images/falcon.png" 
-						 width="30px"
-						 alt="Icono de un balón">
-					<span class="navbar-brand">Falcons School</span>
-                </a>
-                <button class="navbar-toggler" 
-                        type="button" 
-                		data-toggle="collapse" 
-						data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+	
+	<!--Sección de Bienvenida-->
+	<div class="bienvenida">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="#">
+					<i class="far fa-futbol" style="color:#ff922b"></i>
+					Falcons School</a>
+				<button class="navbar-toggler" 
+						    type="button" 
+								data-toggle="collapse" 
+								data-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
 				</button>
-				
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Pricing</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Disabled</a>
-						</li>
-					</ul>
+					<div class="navbar-nav ">
+
+						<a class="nav-item nav-link active" href="#">Home</a>
+						<a class="nav-item nav-link" href="#">Características</a>
+						<a class="nav-item nav-link" href="#">Profesores</a>
+						<a class="nav-item nav-link" href="#">Experiencias</a>
+						<a class="nav-item nav-link" href="#">Newsletter</a>
+						<a class="nav-item nav-link" href="#">Contacto</a>
+
+					</div>
 				</div>
-            </nav>
-        </div>
-    </div>
+			</nav>
+		</div>
 
-    <!--Sección de características-->
-    <div class="caracteristicas"></div>
+		<div class="contenido__wrapper container">
+			<div class="row">
+				<div class="col-lg-5 col-md-5 col-sm-12">
+					<h1 class="contenido__wrapper--encabezado display-4 text-white">
+						Sé el mejor jugador de fútbol sala</h1>
+						<p class="text-muted">Acá te entrenamos para que seas el mejor jugador de fútbol sala.</p>
+				</div>
 
-    <!--Sección de Maestros-->
-    <div class="maestros"></div>
+				<div class="col-lg-4 col-md-5 col-sm-12 ml-auto">
+					<img width="300px" src="images/soccer-player.png" alt="Soccer-player">
+				</div>
+			</div>
+		</div>
 
-    <!--Sección de Esperiencias-->
-    <div class="experiencias"></div>
+	<!--Sección de características-->
+	<div class="caracteristicas"></div>
 
-    <!--Newsletter-->
-    <div class="newsletter"></div>
+	<!--Sección de Maestros-->
+	<div class="maestros"></div>
 
-    <!--Contacto-->
-    <div class="contacto"></div>
+	<!--Sección de Esperiencias-->
+	<div class="experiencias"></div>
 
-    <!--Footer-->
-    <footer></footer>
+	<!--Newsletter-->
+	<div class="newsletter"></div>
+
+	<!--Contacto-->
+	<div class="contacto"></div>
+
+	<!--Footer-->
+	<footer></footer>
 
 
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
