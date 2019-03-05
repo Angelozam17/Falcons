@@ -1,6 +1,7 @@
 @import url("../fonts/Poppins.css");
 body {
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 body .bienvenida {
   min-height: 100vh;
@@ -29,13 +30,12 @@ body .bienvenida nav .navbar-nav {
 }
 @media (max-width: 767px) {
   body .bienvenida .contenido__wrapper {
-    padding-top: 4.5em;
+    padding: 4.5em 0;
     text-align: center;
   }
 }
 body .caracteristicas {
   width: 100%;
-  height: 100vh;
 }
 body .caracteristicas .caracteristicas__bg {
   height: 100vh;
@@ -61,8 +61,19 @@ body .caracteristicas .caracteristicas__bg img {
   max-width: 300px;
   z-index: 1;
 }
+body .caracteristicas .caracteristicas__inner {
+  width: 100%;
+  height: 100vh;
+}
 @media (max-width: 991px) {
-  body .caracteristicas img {
+  .caracteristicas .caracteristicas__bg {
+    max-height: 7vh !important;
+  }
+  .caracteristicas .caracteristicas__bg img {
+    height: 80%;
     left: 50% !important;
+  }
+  .caracteristicas .caracteristicas__inner {
+    max-height: 93vh !important;
   }
 }

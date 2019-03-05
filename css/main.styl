@@ -2,6 +2,7 @@
 
 body
   font-family 'Poppins', sans-serif;
+  font-size 1rem
   .bienvenida
 
     min-height 100vh
@@ -29,12 +30,11 @@ body
 
     @media (max-width: 767px)
       .contenido__wrapper
-        padding-top 4.5em
+        padding 4.5em 0
         text-align center
 
   .caracteristicas
     width: 100%
-    height 100vh
 
     .caracteristicas__bg
       height: 100vh
@@ -59,9 +59,20 @@ body
         max-width: 300px  
         z-index 1
 
-    @media (max-width: 991px)
+    .caracteristicas__inner
+      width: 100%
+      height 100vh
+
+@media (max-width: 991px)
+  .caracteristicas
+    .caracteristicas__bg
+      max-height 7vh !important
       img 
+        height 80%
         left 50% !important
+
+    .caracteristicas__inner
+      max-height 93vh !important
 
 
       
