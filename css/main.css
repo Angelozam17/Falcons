@@ -1,4 +1,19 @@
 @import url("../fonts/Poppins.css");
+* {
+  box-sizing: border-box;
+}
+.underline--left {
+  position: relative;
+}
+.underline--left:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  bottom: -20px;
+  left: 0;
+  background-color: #28a745;
+}
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
@@ -64,6 +79,18 @@ body .caracteristicas .caracteristicas__bg img {
 body .caracteristicas .caracteristicas__inner {
   width: 100%;
   height: 100vh;
+}
+body .caracteristicas .caracteristicas__inner .title {
+  font-size: 2rem;
+}
+body .caracteristicas .caracteristicas__inner .icon {
+  min-width: 65px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  font-size: 27px;
+  box-shadow: 0 2px 4px rgba(33,37,41,0.1), 0 7px 14px rgba(33,37,41,0.1);
+  border-radius: 50%;
 }
 @media (max-width: 991px) {
   .caracteristicas .caracteristicas__bg {
