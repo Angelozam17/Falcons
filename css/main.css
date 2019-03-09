@@ -30,7 +30,7 @@ body .bienvenida nav .navbar-nav {
 }
 @media (max-width: 767px) {
   body .bienvenida .contenido__wrapper {
-    padding: 4.5em 0;
+    padding: 2em 0;
     text-align: center;
   }
 }
