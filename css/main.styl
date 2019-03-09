@@ -1,5 +1,7 @@
 @import url('../fonts/Poppins.css') 
-  
+
+$color_falcon = #b71c1c;
+
 *
   box-sizing: border-box
 
@@ -12,13 +14,17 @@
     height: 2px
     bottom -20px
     left    0
-    background-color #28a745
+    background-color $color_falcon
+
+.icon 
+  background-color: $color_falcon
 
 body
   font-family 'Poppins', sans-serif;
   font-size 1rem
-  .bienvenida
+  font-weight: 300
 
+  .bienvenida
     min-height 100vh
     background url(../images/carousel-3.jpg) no-repeat center fixed
     background-size: cover
@@ -38,11 +44,11 @@ body
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
         font-weight: 300
 
-    @media (max-width: 991px)
+    @media (max-width: 992px)
       .header-social
         display: none
 
-    @media (max-width: 767px)
+    @media (max-width: 768px)
       .contenido__wrapper
         padding 4.5em 0
         text-align center
@@ -51,10 +57,10 @@ body
     width: 100%
 
     .caracteristicas__bg
-      height: 100vh
+      position relative  
       background url(../images/carousel-2.jpg) no-repeat center fixed
       background-size: cover
-      position relative
+    
       &::before
         position: absolute
         content: ""
@@ -62,8 +68,8 @@ body
         right:  0
         bottom: 0
         left    0
-        opacity: 0.5
-        background-color: #e9ecef
+        opacity: 0.6
+        background-color:#e9ecef
 
       img 
         position: absolute
@@ -74,8 +80,10 @@ body
         z-index 1
 
     .caracteristicas__inner
-      width: 100%
-      height 100vh
+      width:      100%
+      min-height: 100vh
+      padding-left:  180px
+      padding-right: 50px
 
       .title
         font-size: 2rem
@@ -86,24 +94,27 @@ body
         text-align   center
         line-height: 65px
         font-size:   27px
-        box-shadow: 0 2px 4px rgba(33,37,41,.1), 0 7px 14px rgba(33,37,41,.1);
+        box-shadow: 0 2px 4px rgba(33,37,41,.1), 0 7px 14px rgba(33,37,41,.1)
         border-radius 50%
       
-        
 
-  
-          
-
-@media (max-width: 991px)
+@media (max-width: 992px)
   .caracteristicas
     .caracteristicas__bg
-      max-height 7vh !important
-      img 
-        height 80%
-        left 50% !important
-
+      display none
     .caracteristicas__inner
-      max-height 93vh !important
+      padding-left: 50px !important
+
+@media (max-width: 400px)
+  .caracteristicas
+    .caracteristicas__inner
+      padding-left: 10px !important
+      padding-right: 10px !important
+
+      article
+        .icon
+          display none
+
 
 
       
