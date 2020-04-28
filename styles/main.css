@@ -27,18 +27,32 @@ p{
 }
 
 button{
-    border: 1px solid brown;
     padding: 5px 20px;
     cursor: pointer;
-    background-color: brown;
     color: rgb(247,247,247);
     border-radius: 10px;
     outline: none;
     transition: all ease 400ms;
 }
 
-button:hover{
+.btn-ok{
+    border: 1px solid slateblue;
+    background-color: slateblue;
+}
+
+.btn-cancel{
+    border: 1px solid brown;
+    background-color: brown;
+}
+
+.btn-cancel:hover{
     background-color: rgb(247,247,247);
     color: brown;
     border: 1px solid brown;
+}
+
+.btn-ok:hover{
+    background-color: rgb(247,247,247);
+    color: slateblue;
+    border: 1px solid slateblue;
 }
