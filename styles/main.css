@@ -5,10 +5,10 @@
 
 body{
     background-color: snow;
-    color: rgb(80, 80, 80)
+    color: gray;
 }
 
-section{
+.container{
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -16,6 +16,14 @@ section{
     border: 1px solid gray;
     padding: 40px;
     border-radius: 20px;
+}
+
+article{
+    margin-bottom:  50px;
+}
+
+article:last-child{
+    margin-bottom: 0;
 }
 
 .header{
@@ -26,7 +34,7 @@ section{
 }
 
 .header h2{
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 
 h1, h2{
