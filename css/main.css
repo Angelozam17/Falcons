@@ -1,0 +1,79 @@
+@import url("../fonts/Poppins.css");
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+body .bienvenida {
+  min-height: 100vh;
+  background: url("../images/carousel-3.jpg") no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+}
+body .bienvenida::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #212529;
+}
+body .bienvenida nav .navbar-nav {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+}
+@media (max-width: 991px) {
+  body .bienvenida .header-social {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  body .bienvenida .contenido__wrapper {
+    padding: 2em 0;
+    text-align: center;
+  }
+}
+body .caracteristicas {
+  width: 100%;
+}
+body .caracteristicas .caracteristicas__bg {
+  height: 100vh;
+  background: url("../images/carousel-2.jpg") no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+}
+body .caracteristicas .caracteristicas__bg::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: #e9ecef;
+}
+body .caracteristicas .caracteristicas__bg img {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  max-width: 300px;
+  z-index: 1;
+}
+body .caracteristicas .caracteristicas__inner {
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 991px) {
+  .caracteristicas .caracteristicas__bg {
+    max-height: 7vh !important;
+  }
+  .caracteristicas .caracteristicas__bg img {
+    height: 80%;
+    left: 50% !important;
+  }
+  .caracteristicas .caracteristicas__inner {
+    max-height: 93vh !important;
+  }
+}
