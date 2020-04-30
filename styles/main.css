@@ -95,3 +95,11 @@ button{
     color: slateblue;
     border: 1px solid slateblue;
 }
+
+.footer{
+    padding-top: 40px;
+    border-top: 1px solid gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
