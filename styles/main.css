@@ -19,8 +19,16 @@ body{
     border-radius: 20px;
 }
 
+article:hover{
+    box-shadow: 5px 5px 10px rgb(199, 199, 199);
+}
+
 article{
     margin-bottom:  50px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: box-shadow ease 200ms;
 }
 
 article:last-child{
