@@ -8,13 +8,14 @@ body{
     color: gray;
 }
 
+
 .container{
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     border: 1px solid gray;
-    padding: 40px;
+    padding: 0 40px 40px 40px;
     border-radius: 20px;
 }
 
@@ -29,12 +30,22 @@ article:last-child{
 .header{
     border-bottom: 1px solid gray;
     margin-bottom: 25px;
-    text-align: center;
+    padding: 40px 0 20px 0;
     text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header h2{
-    margin-bottom: 40px;
+.header__title{
+    color: rgb(70, 70, 70);
+    margin: 0;
+    line-height: 50px;
+}
+
+.header__logo{
+    height: inherit;
+    border: 1px dashed gray;
+    width: 60px;
 }
 
 h1, h2{
