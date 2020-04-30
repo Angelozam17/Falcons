@@ -20,7 +20,7 @@ body{
 }
 
 article:hover{
-    box-shadow: 5px 5px 10px rgb(199, 199, 199);
+    box-shadow: 3px 3px 10px rgb(199, 199, 199);
 }
 
 article{
@@ -28,7 +28,7 @@ article{
     padding: 10px;
     cursor: pointer;
     border-radius: 10px;
-    transition: box-shadow ease 200ms;
+    transition: box-shadow ease 300ms;
 }
 
 article:last-child{
